@@ -157,23 +157,113 @@
          $quantity2 = 1;
          $price2 = 700;
         -->
+         <script>
+            let rows = [];
+            rows.push(['116010.jpg', 'Artist Holding a Thistle', 2, 500]);
+            rows.push(['113010.jpg', 'Self-portrait in a Straw Hat', 1, 700]);
+
+            /* write rows */
+
+            function writeRow(file,product,quantity,price)
+            {
+                let s = "<tr>"+
+                            "<td><img class=\"img-thumbnail\" src=\"images/art/tiny/" + file + "\" alt=\"...\"></td>"+
+                            "<td>" + product + "</td>"+
+                            "<td>" + quantity + "</td>"+
+                            "<td>$" + price + "</td>"+
+                            "<td>$" + quantity * price + "</td>"+
+                        "</tr>";
+                document.write(s);
+            }
+            
+            function writeAllRows(rows)
+            {
+                for (let i = 0; i < rows.length; i++)
+                {
+                    if(!(rows[i] === undefined) && !(rows[i] === null))
+                    {
+                        writeRow(rows[i][0], rows[i][1], rows[i][2], rows[i][3]);
+                    }
+                }
+            }
+
+            writeAllRows(rows);
+
+            /* count amounts */
+
+            let costs = [];
+            
+            function countSubtotal(rows)
+            {
+                let sum = 0;
+                for (let i = 0; i < rows.length; i++)
+                {
+                    try
+                    {
+                        sum += rows[i][2] * rows[i][3];
+                    }
+                    catch (e) {}
+                }
+
+                return sum;
+            }
+
+            function countTax(subtotal)
+            {
+                return subtotal / 10;
+            }
+
+            function countShipping(subtotal)
+            {
+                return (subtotal > 1000) ? 40 : 0;
+            }
+            
+            function countGrandTotal(costs)
+            {
+                let sum = 0;
+                for (let i = 0; i < costs.length; i++)
+                {
+                    sum += costs[i];
+                }
+
+                return sum;
+            }
+
+            function writeAmount(amount)
+            {
+                document.write("<td>$" + amount + "</td>")
+            }
+
+            let subtotal = countSubtotal(rows);
+            let tax = countTax(subtotal);
+            let shipping = countShipping(subtotal);
+            costs.push(subtotal);
+            costs.push(tax);
+            costs.push(shipping);
+            let grandTotal = countGrandTotal(costs);
+         </script>
 
          <tr class="success strong">
             <td colspan="4" class="moveRight">Subtotal</td>
-            <td >$1700</td>
+            <script>writeAmount(subtotal);</script>
          </tr>
          <tr class="active strong">
             <td colspan="4" class="moveRight">Tax</td>
-            <td>$170</td>
+            <script>writeAmount(tax);</script>
          </tr>  
          <tr class="strong">
             <td colspan="4" class="moveRight">Shipping</td>
-            <td>$100</td>
+            <script>writeAmount(shipping);</script>
          </tr> 
          <tr class="warning strong text-danger">
             <td colspan="4" class="moveRight">Grand Total</td>
-            <td>$1970</td>
-         </tr>    
+            <script>writeAmount(grandTotal);</script>
+         </tr>
+
+         <script>
+             document.querySelectorAll()
+         </script>
+
          <tr >
             <td colspan="4" class="moveRight"><button type="button" class="btn btn-primary" >Continue Shopping</button></td>
             <td><button type="button" class="btn btn-success" >Checkout</button></td>
