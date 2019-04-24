@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa06d439-c082-4303-b8d6-b9f29601f2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lab5/lab5.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/lab5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/lab6 作业要求.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6 作业要求.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/lab6.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,21 +14,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab5/lab5.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab6/lab6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="238" column="49" lean-forward="true" selection-start-line="238" selection-start-column="49" selection-end-line="238" selection-end-column="49" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab5/sample.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/lab6/lab6 作业要求.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="731">
+                <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab6/lab6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Theme</find>
+      <find>dist</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,12 +59,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lab5/lab5.html" />
+        <option value="$PROJECT_DIR$/lab6/lab6.css" />
+        <option value="$PROJECT_DIR$/lab6/lab6.js" />
+        <option value="$PROJECT_DIR$/lab6/lab6 作业要求.md" />
+        <option value="$PROJECT_DIR$/lab6/lab6.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="165" />
-    <option name="y" value="5" />
+    <option name="x" value="145" />
+    <option name="y" value="160" />
     <option name="width" value="1750" />
     <option name="height" value="1030" />
   </component>
@@ -61,6 +89,31 @@
               <item name="fdu-18ss-web-lab" type="b2602c69:ProjectViewProjectNode" />
               <item name="fdu-18ss-web-lab" type="462c0819:PsiDirectoryNode" />
               <item name="lab5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdu-18ss-web-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdu-18ss-web-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdu-18ss-web-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdu-18ss-web-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdu-18ss-web-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdu-18ss-web-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="medium" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdu-18ss-web-lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdu-18ss-web-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="lab6" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="small" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -86,12 +139,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.lab6.html">
     <configuration name="lab5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fdu-18ss-web-lab/lab5/lab5.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="lab6.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fdu-18ss-web-lab/lab6/lab6.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.lab6.html" />
         <item itemvalue="JavaScript Debug.lab5.html" />
       </list>
     </recent_temporary>
@@ -107,24 +164,26 @@
       <option name="presentableId" value="Default" />
       <updated>1555490682871</updated>
       <workItem from="1555490684027" duration="1342000" />
-      <workItem from="1555495754702" duration="3875000" />
+      <workItem from="1555495754702" duration="4065000" />
+      <workItem from="1555516753091" duration="222000" />
+      <workItem from="1556099976445" duration="6408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5217000" />
+    <option name="totallyTimeSpent" value="12037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5254692" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -146,10 +205,51 @@
     <entry file="file://$PROJECT_DIR$/lab5/sample.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab5/bootstrap3/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab5/bootstrap3/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15015">
+          <caret line="87" column="27" lean-forward="true" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab5/lab5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="238" column="49" lean-forward="true" selection-start-line="238" selection-start-column="49" selection-end-line="238" selection-end-column="49" />
+        <state relative-caret-position="468">
+          <caret line="352" selection-start-line="352" selection-end-line="352" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/lab6.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/lab6 作业要求.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="731">
+            <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/lab6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab6/lab6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
         </state>
       </provider>
     </entry>
