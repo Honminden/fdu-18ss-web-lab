@@ -2,7 +2,7 @@
 <head>
 <title>Chapter 10</title>
 <link rel="stylesheet" href="lab7.css">
-<script>
+<script src="jquery-3.4.1.min.js">
 </script>      
 </head>    
 <body class="tiled">
@@ -37,7 +37,75 @@
     </div>
 </main>
 <script>
+	$(document).ready(() =>
+	{
+	    $('#thumbBox img').on(
+	    {
+	        click: (event) =>
+	        {
+		        $('#imgManipulated img').prop('src', event.target.src.replace(/small/g, "medium"));
+		        $('#imgManipulated figcaption')
+		            .empty()
+			        .append(`<em>${$(this).prop('title')}</em> <br>${$(this).prop('alt')}`)
+		    }
+	    });
 
+	    $('#sliderBox input[type="range"]').on(
+	    {
+	        change:() =>
+	        {
+	            setFilter($('#imgManipulated img'));
+	        }
+	    });
+
+	    $('#sliderBox button#resetFilters').on(
+        {
+            click: (event) =>
+	        {
+		        event.preventDefault();
+		        $('#imgManipulated img').css(
+			    {
+			        'filter': `none`,
+			        '-webkit-filter': `none`
+			    })
+		    }
+	    })
+	});
+
+	function setFilter(jq)
+	{
+	    let op = $('#sliderBox input[type="range"]#sliderOpacity').prop('value');
+	    let st = $('#sliderBox input[type="range"]#sliderSaturation').prop('value');
+	    let br = $('#sliderBox input[type="range"]#sliderBrightness').prop('value');
+	    let hr = $('#sliderBox input[type="range"]#sliderHue').prop('value');
+	    let gs = $('#sliderBox input[type="range"]#sliderGray').prop('value');
+	    let bl = $('#sliderBox input[type="range"]#sliderBlur').prop('value');
+
+		$('#sliderBox span#numOpacity')
+			.empty()
+			.append(`${op}`);
+		$('#sliderBox span#numSaturation')
+			.empty()
+			.append(`${st}`);
+		$('#sliderBox span#numBrightness')
+			.empty()
+			.append(`${br}`);
+		$('#sliderBox span#numHue')
+			.empty()
+			.append(`${hr}`);
+		$('#sliderBox span#numGray')
+			.empty()
+			.append(`${gs}`);
+		$('#sliderBox span#numBlur')
+			.empty()
+			.append(`${bl}`);
+
+		jq.css(
+		{
+			'filter': `opacity(${op}%) saturate(${st}%) brightness(${br}%) hue-rotate(${hr}deg) grayscale(${gs}%) blur(${bl}px)`,
+			'-webkit-filter': `opacity(${op}%) saturate(${st}%) brightness(${br}%) hue-rotate(${hr}deg) grayscale(${gs}%) blur(${bl}px)`
+		});
+	}
 </script>    
 </body>   
 </html>
