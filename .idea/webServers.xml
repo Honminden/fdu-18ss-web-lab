@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3b36ab20-3e6a-46dc-85ed-522e9533692d" name="lab" url="http://localhost">
-        <fileTransfer port="0" mountedRoot="D:\WebAssignment\Lab\fdu-18ss-web-lab\lab8" accessType="MOUNT" />
+        <fileTransfer port="0" mountedRoot="D:\WebAssignment\Lab\fdu-18ss-web-lab\lab9" accessType="MOUNT" />
       </webServer>
     </option>
   </component>

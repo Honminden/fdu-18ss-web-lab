@@ -5,7 +5,7 @@
       <paths name="lab">
         <serverdata>
           <mappings>
-            <mapping deploy=".\lab8" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy=".\lab9" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
