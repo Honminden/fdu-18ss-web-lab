@@ -1,19 +1,18 @@
 <?php
 //Fill this place
 
-try
-{
-    $mysqli = new mysqli('localhost', 'root', '', 'travel');
-    $continents = $mysqli -> query('SELECT * from continents');
-    $countries = $mysqli -> query('SELECT * from countries');
-    $imageDetails = $mysqli -> query('SELECT * from imagedetails');
 
-    $mysqli = null;
-}
-catch (PDOException $e)
+$mysqli = new mysqli('localhost', 'root', '', 'travel');
+if (mysqli_connect_errno())
 {
-    die($e -> getMessage());
+    die("mysqli connect error" . mysqli_connect_error());
 }
+
+$continents = $mysqli -> query('SELECT * from continents');
+$countries = $mysqli -> query('SELECT * from countries');
+$imageDetails = $mysqli -> query('SELECT * from imagedetails');
+
+$mysqli = null;
 
 //****** Hint ******
 //connect database and fetch data here
