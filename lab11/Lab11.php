@@ -1,9 +1,22 @@
 <?php
 //Fill this place
 
+try
+{
+    $mysqli = new mysqli('localhost', 'root', '', 'travel');
+    $continents = $mysqli -> query('SELECT * from continents');
+    $countries = $mysqli -> query('SELECT * from countries');
+    $imageDetails = $mysqli -> query('SELECT * from imagedetails');
+
+    $mysqli = null;
+}
+catch (PDOException $e)
+{
+    die($e -> getMessage());
+}
+
 //****** Hint ******
 //connect database and fetch data here
-
 
 ?>
 
@@ -44,6 +57,8 @@
                 <?php
                 //Fill this place
 
+                $result = $continents;
+
                 //****** Hint ******
                 //display the list of continents
 
@@ -58,6 +73,11 @@
                 <option value="0">Select Country</option>
                 <?php 
                 //Fill this place
+
+                $result = $countries;
+                while($row = $result->fetch_assoc()) {
+                    echo '<option value=' . $row['ISO'] . '>' . $row['CountryName'] . '</option>';
+                }
 
                 //****** Hint ******
                 /* display list of countries */ 
@@ -75,6 +95,32 @@
 		<ul class="caption-style-2">
             <?php 
             //Fill this place
+
+            $result = $imageDetails;
+            $hasContent = false;
+            while($row = $result->fetch_assoc()) {
+                if ((empty($_GET['continent']) || ($row['ContinentCode'] === $_GET['continent']))
+                    && (empty($_GET['country']) || ($row['CountryCodeISO'] === $_GET['country']))
+                    && (empty($_GET['title']) || ($row['Title'] === $_GET['title'])))
+                {
+                    echo '<li>';
+                    echo '  <a href="detail.php?id=' . $row['ImageID'] . '" class="img-responsive">';
+                    echo '    <img src="images/square-medium/' . $row['Path'] . '" alt="' . $row['Title'] . '" >';
+                    echo '    <div class="caption">';
+                    echo '      <div class="blur"></div>';
+                    echo '      <div class="caption-text">';
+                    echo '        <p>' . $row['Description'] . '</p>';
+                    echo '      </div>';
+                    echo '    </div>';
+                    echo '  </a>';
+                    echo '</li>';
+                    $hasContent = true;
+                }
+            }
+            if (!$hasContent)
+            {
+                echo '<h1>No content here!</h1>';
+            }
 
             //****** Hint ******
             /* use while loop to display images that meet requirements ... sample below ... replace ???? with field data
